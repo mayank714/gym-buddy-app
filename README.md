@@ -3,7 +3,7 @@
 A full-stack AI fitness assistant. Track your workouts, chat with an AI coach powered by GPT-4, and start voice coaching sessions — all from one dashboard.
 
 - **Frontend** — this repo (Next.js 16)
-- **Backend** — [mayank714/gym-buddy-backend](https://github.com/mayank714/gym-buddy-backend) (NestJS + SQLite)
+- **Backend** — [mayank714/fitai-backend](https://github.com/mayank714/fitai-backend) (NestJS + SQLite)
 
 ---
 
@@ -21,8 +21,8 @@ A full-stack AI fitness assistant. Track your workouts, chat with an AI coach po
 
 | Part | Repo | Default Port |
 |---|---|---|
-| Frontend (this) | [gym-buddy-app](https://github.com/mayank714/gym-buddy-app) | 4200 |
-| Backend | [gym-buddy-backend](https://github.com/mayank714/gym-buddy-backend) | 3000 |
+| Frontend (this) | [fitai-frontend](https://github.com/mayank714/fitai-frontend) | 4200 |
+| Backend | [fitai-backend](https://github.com/mayank714/fitai-backend) | 3000 |
 
 ---
 
@@ -80,8 +80,8 @@ middleware.ts      # route guard (redirects unauthenticated requests)
 ### 1. Start the backend
 
 ```bash
-git clone https://github.com/mayank714/gym-buddy-backend
-cd gym-buddy-backend
+git clone https://github.com/mayank714/fitai-backend
+cd fitai-backend
 npm install
 cp .env.example .env   # fill in VAPI_API_KEY, WEBHOOK_URL, DATABASE_NAME
 npm run start:dev      # runs on http://localhost:3000
