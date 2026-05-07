@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 const PUBLIC_PATHS = ['/login', '/register'];
-const SESSION_COOKIE = 'gym-buddy-user';
+const SESSION_COOKIE = 'fitai-user';
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;

@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie';
 import { User } from '@/types/user.types';
 
-const SESSION_KEY = 'gym-buddy-user';
+const SESSION_KEY = 'fitai-user';
 const COOKIE_EXPIRES = 7;
 
 export function saveSession(user: User): void {

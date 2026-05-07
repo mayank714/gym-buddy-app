@@ -135,7 +135,7 @@ export default function DashboardPage() {
                 loading={createConversation.isPending}
               >
                 <MessageCircle className="w-4 h-4" />
-                Chat with Gym Buddy
+                Chat with FitAI
               </Button>
               <Button
                 className="w-full justify-start gap-3"

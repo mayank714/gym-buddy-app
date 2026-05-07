@@ -7,12 +7,12 @@ import './globals.css';
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist' });
 
 export const metadata: Metadata = {
-  title: { default: 'Gym Buddy', template: '%s | Gym Buddy' },
-  description: 'AI-powered personal gym trainer — voice & chat coaching, workout tracking, and personalized plans.',
-  keywords: ['gym', 'fitness', 'AI trainer', 'workout', 'personal trainer'],
+  title: { default: 'FitAI', template: '%s | FitAI' },
+  description: 'FitAI — AI-Powered Personal Fitness Assistant. Voice & chat coaching, workout tracking, and personalized plans.',
+  keywords: ['fitness', 'AI trainer', 'workout', 'personal trainer', 'FitAI'],
   openGraph: {
-    title: 'Gym Buddy',
-    description: 'Your AI-powered gym trainer',
+    title: 'FitAI — AI-Powered Personal Fitness Assistant',
+    description: 'Your AI-powered personal fitness assistant',
     type: 'website',
   },
 };

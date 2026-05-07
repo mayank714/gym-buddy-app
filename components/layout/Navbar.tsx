@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="w-7 h-7 rounded-lg bg-orange-500 flex items-center justify-center">
             <Zap className="w-3.5 h-3.5 text-white" />
           </div>
-          <span className="font-bold text-white">Gym Buddy</span>
+          <span className="font-bold text-white">FitAI</span>
         </Link>
         <button
           onClick={() => setOpen((v) => !v)}

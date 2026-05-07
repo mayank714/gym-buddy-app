@@ -48,7 +48,7 @@ export default function ChatPage() {
           <MessageCircle className="w-10 h-10 text-slate-700 mb-4" />
           <p className="text-slate-300 font-medium">No conversations yet</p>
           <p className="text-slate-500 text-sm mb-4">
-            Start a chat with your AI Gym Buddy.
+            Start a chat with your AI fitness assistant.
           </p>
           <Button onClick={handleNew} loading={createConversation.isPending}>
             <Plus className="w-4 h-4" />

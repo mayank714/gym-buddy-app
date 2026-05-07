@@ -97,7 +97,7 @@ export default function ConversationPage() {
           <div className="flex flex-col items-center justify-center h-full text-center">
             <p className="text-slate-500 text-sm">
               {isActive
-                ? 'Send a message to start chatting with Gym Buddy.'
+                ? 'Send a message to start chatting with FitAI.'
                 : 'No messages in this conversation.'}
             </p>
           </div>
@@ -114,7 +114,7 @@ export default function ConversationPage() {
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
             rows={1}
-            placeholder="Message Gym Buddy…"
+            placeholder="Message FitAI…"
             className="flex-1 resize-none rounded-xl bg-slate-800 border border-slate-700 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 max-h-32 overflow-y-auto"
           />
           <Button

@@ -8,7 +8,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
           <div className="w-9 h-9 rounded-xl bg-orange-500 flex items-center justify-center">
             <Zap className="w-5 h-5 text-white" />
           </div>
-          <span className="text-xl font-bold text-white">Gym Buddy</span>
+          <span className="text-xl font-bold text-white">FitAI</span>
         </div>
         <div>
           <blockquote className="text-2xl font-semibold text-white leading-snug mb-4">
@@ -38,7 +38,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
             <div className="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center">
               <Zap className="w-4 h-4 text-white" />
             </div>
-            <span className="text-lg font-bold text-white">Gym Buddy</span>
+            <span className="text-lg font-bold text-white">FitAI</span>
           </div>
           {children}
         </div>

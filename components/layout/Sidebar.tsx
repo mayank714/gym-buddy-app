@@ -36,7 +36,7 @@ export default function Sidebar() {
         <div className="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center">
           <Zap className="w-4 h-4 text-white" />
         </div>
-        <span className="text-lg font-bold text-white tracking-tight">Gym Buddy</span>
+        <span className="text-lg font-bold text-white tracking-tight">FitAI</span>
       </Link>
 
       <nav className="flex-1 flex flex-col gap-1">

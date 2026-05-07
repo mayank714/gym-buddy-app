@@ -35,7 +35,7 @@ export function useAuth() {
       try {
         const user = await userService.create(dto);
         saveSession(user);
-        toast.success(`Welcome to Gym Buddy, ${user.name}!`);
+        toast.success(`Welcome to FitAI, ${user.name}!`);
         router.push('/dashboard');
       } catch (err) {
         toast.error(getAxiosErrorMessage(err));

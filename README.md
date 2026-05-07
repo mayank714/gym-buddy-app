@@ -1,6 +1,6 @@
-# Gym Buddy
+# FitAI — AI-Powered Personal Fitness Assistant
 
-A full-stack fitness companion app. Track your workouts, chat with an AI coach powered by GPT-4, and start voice coaching sessions — all from one dashboard.
+A full-stack AI fitness assistant. Track your workouts, chat with an AI coach powered by GPT-4, and start voice coaching sessions — all from one dashboard.
 
 - **Frontend** — this repo (Next.js 16)
 - **Backend** — [mayank714/gym-buddy-backend](https://github.com/mayank714/gym-buddy-backend) (NestJS + SQLite)
@@ -12,7 +12,7 @@ A full-stack fitness companion app. Track your workouts, chat with an AI coach p
 - **Authentication** — Cookie-based sessions with protected routes via middleware. Unauthenticated users are redirected to `/login`.
 - **Dashboard** — At-a-glance stats: total workouts, completed, planned, and chat sessions. Shows today's scheduled workout and quick-action buttons.
 - **Workout Management** — Create, view, and update workouts with exercises (sets, reps, rest, notes). Supports `planned`, `in-progress`, and `completed` statuses.
-- **AI Chat** — Persistent conversation history with a GPT-4 powered Gym Buddy coach. Each session is stored and resumable.
+- **AI Chat** — Persistent conversation history with a GPT-4 powered FitAI coach. Each session is stored and resumable.
 - **Voice Coaching** — One-tap VAPI voice call integration to start a live coaching session.
 
 ---
@@ -97,7 +97,7 @@ Create `.env.local` in the project root:
 
 ```env
 NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
-NEXT_PUBLIC_APP_NAME=Gym Buddy
+NEXT_PUBLIC_APP_NAME=FitAI
 NEXT_PUBLIC_APP_VERSION=1.0.0
 ```
 
@@ -144,7 +144,7 @@ npm run start        # serves on http://localhost:4200
 | Variable | Description | Default |
 |---|---|---|
 | `NEXT_PUBLIC_API_BASE_URL` | Backend base URL | `http://localhost:3000` |
-| `NEXT_PUBLIC_APP_NAME` | App display name | `Gym Buddy` |
+| `NEXT_PUBLIC_APP_NAME` | App display name | `FitAI` |
 | `NEXT_PUBLIC_APP_VERSION` | App version string | `1.0.0` |
 
 ### Backend (`.env`)
@@ -161,7 +161,7 @@ npm run start        # serves on http://localhost:4200
 
 ## Authentication Flow
 
-- Session is stored in a `gym-buddy-user` cookie.
+- Session is stored in a `fitai-user` cookie.
 - `middleware.ts` intercepts all non-static routes: unauthenticated requests redirect to `/login`; authenticated requests to `/login` or `/register` redirect to `/dashboard`.
 - On a 401 response, the Axios interceptor in `services/api.ts` clears the session and redirects to `/login`.
 
